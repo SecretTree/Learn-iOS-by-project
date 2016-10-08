@@ -4,4 +4,4 @@
 
 (Project 1) Stop Watch 
 a time count program, which can pause and reset.
-![StopWatch](http://7xw0h7.com1.z0.glb.clouddn.com/StopWatch.gif)
+![StopWatch](https://github.com/SecretTree/Swift3-Samples/blob/master/StopWatch/StopWatch/StopWatch.gif)
