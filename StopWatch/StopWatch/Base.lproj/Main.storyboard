@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StopWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I7K-QU-jV0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AS4-pw-yBn">
+                                <frame key="frameInset" minX="9" minY="291" width="184" height="356"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQB-Dq-Hcw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FML-ht-Jax">
+                                <frame key="frameInset" minX="201" minY="291" width="168" height="353"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="pause"/>
+                                <connections>
+                                    <action selector="pauseButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqT-MD-poi"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uep-jp-7rn">
+                                <frame key="frameInset" minY="44" width="375" height="189"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5T-Km-9Sg">
+                                        <frame key="frameInset" minX="283" minY="36" width="68" height="29"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzE-SC-5pS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXN-9L-DyC">
+                                        <frame key="frameInset" minY="80" width="375" height="109"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="100"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jXN-9L-DyC" firstAttribute="centerY" secondItem="uep-jp-7rn" secondAttribute="centerY" id="4Gu-Xd-TAD"/>
+                                    <constraint firstItem="P5T-Km-9Sg" firstAttribute="top" secondItem="uep-jp-7rn" secondAttribute="top" constant="30" id="4Sc-FC-eO7"/>
+                                    <constraint firstItem="jXN-9L-DyC" firstAttribute="centerX" secondItem="uep-jp-7rn" secondAttribute="centerX" id="7pf-p3-Jba"/>
+                                    <constraint firstAttribute="trailing" secondItem="P5T-Km-9Sg" secondAttribute="trailing" constant="14" id="M4s-Kl-ftc"/>
+                                    <constraint firstItem="jXN-9L-DyC" firstAttribute="leading" secondItem="uep-jp-7rn" secondAttribute="leading" id="RhB-f3-wR6"/>
+                                    <constraint firstAttribute="trailing" secondItem="jXN-9L-DyC" secondAttribute="trailing" id="qm1-q8-ItT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FML-ht-Jax" firstAttribute="top" secondItem="AS4-pw-yBn" secondAttribute="top" id="DkR-xU-riZ"/>
+                            <constraint firstItem="AS4-pw-yBn" firstAttribute="width" secondItem="I7K-QU-jV0" secondAttribute="width" multiplier="0.5" id="EN3-UO-dZO"/>
+                            <constraint firstItem="AS4-pw-yBn" firstAttribute="top" secondItem="jXN-9L-DyC" secondAttribute="bottom" id="FlG-i2-xDV"/>
+                            <constraint firstItem="FML-ht-Jax" firstAttribute="bottom" secondItem="AS4-pw-yBn" secondAttribute="bottom" id="Hen-F5-kgv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uep-jp-7rn" secondAttribute="trailing" id="Jaw-8i-OVJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FML-ht-Jax" secondAttribute="trailing" constant="-15" id="K2e-f7-uEs"/>
+                            <constraint firstItem="FML-ht-Jax" firstAttribute="leading" secondItem="AS4-pw-yBn" secondAttribute="trailing" constant="1" id="SrB-Ak-avA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AS4-pw-yBn" secondAttribute="bottom" constant="1" id="TzU-H8-dba"/>
+                            <constraint firstItem="uep-jp-7rn" firstAttribute="height" secondItem="I7K-QU-jV0" secondAttribute="height" multiplier="0.39" id="WY7-V3-TBX"/>
+                            <constraint firstItem="uep-jp-7rn" firstAttribute="leading" secondItem="I7K-QU-jV0" secondAttribute="leadingMargin" id="Wea-ai-6rW"/>
+                            <constraint firstItem="AS4-pw-yBn" firstAttribute="leading" secondItem="I7K-QU-jV0" secondAttribute="leadingMargin" constant="-15" id="jmZ-u7-ZWR"/>
+                            <constraint firstItem="uep-jp-7rn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ofj-Pv-aJi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pauseBtn" destination="FML-ht-Jax" id="VWk-lb-7EI"/>
+                        <outlet property="playBtn" destination="AS4-pw-yBn" id="51K-lw-4MV"/>
+                        <outlet property="timeLabel" destination="jXN-9L-DyC" id="VcB-tE-tdu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" width="42" height="56"/>
+        <image name="play" width="48" height="61"/>
+    </resources>
+</document>
