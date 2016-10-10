@@ -2,7 +2,7 @@
 
 **IOS Samples use Swift3**
 
-Project 1 : [Stop Watch] (https://github.com/SecretTree/Swift-Samples/StopWatch)
+Project 1 : [Stop Watch] (https://github.com/SecretTree/Swift-Samples/tree/master/StopWatch)
 
 a time count program, which can pause and reset.
 
