@@ -4,8 +4,8 @@
 
 use swift3 and ios10
 
-**Project 1** : [Stop Watch] (https://github.com/SecretTree/Swift-Samples/tree/master/StopWatch)
+**Project 1** : [Stop Watch] (https://github.com/SecretTree/Learn-iOS-by-project/tree/master/StopWatch)
 
 a time count program, which can pause and reset.
 
-![StopWatch](https://github.com/SecretTree/Swift3-Samples/blob/master/StopWatch/StopWatch/StopWatch.gif)
+![StopWatch](hhttps://github.com/SecretTree/Learn-iOS-by-project/blob/master/StopWatch/StopWatch/StopWatch.gif)
