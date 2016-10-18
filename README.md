@@ -1,6 +1,8 @@
-# Swift-Samples
+# Learn iOS by project
 
 ##IOS Samples use Swift##
+
+use swift3 and ios10
 
 **Project 1** : [Stop Watch] (https://github.com/SecretTree/Swift-Samples/tree/master/StopWatch)
 
