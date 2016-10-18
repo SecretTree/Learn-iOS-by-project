@@ -8,4 +8,4 @@ use swift3 and ios10
 
 a time count program, which can pause and reset.
 
-![StopWatch](hhttps://github.com/SecretTree/Learn-iOS-by-project/blob/master/StopWatch/StopWatch/StopWatch.gif)
+![StopWatch](https://github.com/SecretTree/Learn-iOS-by-project/blob/master/StopWatch/StopWatch/StopWatch.gif)
